@@ -130,6 +130,7 @@ SOURCE /vagrant/master.sql
 CHANGE MASTER TO MASTER_HOST = "192.168.56.10", MASTER_PORT = 3306, MASTER_USER = "repl", MASTER_PASSWORD = "!OtusLinux2018", MASTER_AUTO_POSITION = 1;
 START SLAVE;
 SHOW SLAVE STATUS\G
+```
 
 ![img](Image2.png)
 
@@ -138,7 +139,7 @@ SHOW SLAVE STATUS\G
 
 - Проверим репликацю в действии. На мастере
 
-```
+
 USE bet;
 INSERT INTO bookmaker (id,bookmaker_name) VALUES(1,'1xbet');
 SELECT * FROM bookmaker;
