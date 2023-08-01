@@ -118,10 +118,7 @@ mysqldump --all-databases --triggers --routines --master-data --ignore-table=bet
 > На этом настройка Master-а завершена. Заливаем дамп мастера и убеждаемся, что база есть и она без лишних таблиц
 
 ```
-
-
 SOURCE /vagrant/master.sql
-
 ```
 ![img](Image1.png)
 
